@@ -1,26 +1,33 @@
 <?php
 
 // TODO A: Improve the readability of this file through refactoring and documentation.
-	// Added white space between Article Editor and the word count
+
+	// Added spacing and comments, grouped items together
 
 // TODO B: Review the HTML structure and make sure that it is valid and contains
 // required elements. Edit and re-organize the HTML as needed.
 
+	// Create a new page for functions to import and remove "echo"s
+
 // TODO C: Review the index.php entrypoint for security and performance concerns
 // and provide fixes. Note any issues you don't have time to fix.
 
-	// I would add php to sanitize the action of post that is attached to the form element. That way, if an attacker tries to input special characters or another link in the text fields, it will not work. 
+	// I would add php to sanitize the action of post that is attached to the form element. That way, if an attacker tries to 
+	// input special characters or another link in the text fields, it will not work. 
 
 // TODO D: The list of available articles is hardcoded. Add code to get a
 // dynamically generated list.
 
-	// 
+	// I would use the function found on App.php to retrieve all the articles,
+	// map through the array, and echo out a list item with 
+	// the title of each article
 
 
 
 use App\App;
 
 require_once __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/src/App.php';
 
 $app = new App();
 
@@ -75,14 +82,14 @@ function test_input($data) {
 
 echo "<body>";
 echo "<div id='header' class='header'>
-<a href='/'>Article editor &nbsp;</a><div>$wordCount</div>
+<a href='/'>Article editor</a><div>$wordCount</div>
 </div>";
 echo "<div class='page'>";
 echo "<div class='main'>";
 echo "<h2>Create/Edit Article</h2>
 <p>Create a new article by filling out the fields below. Edit an article by typing the beginning of the title in the title field, selecting the title from the auto-complete list, and changing the text in the textfield.</p>
-<form method='post' action='index.php'>
-<input name='title' type='text' placeholder='Article title...' value={$title}>
+<form method='post' action='index.php' >
+<input autofocus name='title' type='text' placeholder='Article title...' value={$title}>
 <br />
 <textarea name='body' type='text' placeholder='Article body...' >$body</textarea>
 <br />
