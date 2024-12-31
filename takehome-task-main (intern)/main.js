@@ -43,7 +43,7 @@
 	// to the user when API requests fail and provide a graceful degradation of
 	// functionality.
 
-	function getFormButtonToWork() {
+	const getFormButtonToWork = () => {
 		const submitButton = document.querySelector( '.submit-button' );
 		const form = document.querySelector( 'form' );
 

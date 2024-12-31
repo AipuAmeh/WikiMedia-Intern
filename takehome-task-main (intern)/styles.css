@@ -17,6 +17,19 @@ spec, should be made that way here.
 	Add media queries for tablet and mobile screens
 */
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+form{
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
 
 
 .header, .main {
@@ -28,3 +41,17 @@ spec, should be made that way here.
 .header a {
 	float: left;
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-button {
+  background-color: black;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+
