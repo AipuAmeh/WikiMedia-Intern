@@ -4,6 +4,9 @@ namespace App;
 
 // TODO: Improve the readability of this file through refactoring and documentation.
 
+	// Create a constructor for defining parameters and variables used
+	// Outline what each function does
+
 require_once dirname( __DIR__ ) . '/globals.php';
 
 class App {

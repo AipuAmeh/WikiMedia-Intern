@@ -4,8 +4,20 @@ spec file at `design-spec/layout.png`. Don't worry about making it pixel perfect
 or matching the colors/spacing exactly. Instead, focus on the alignment of
 elements. Elements that appear to be horizontally or vertically centered in the
 spec, should be made that way here.
+
+  * 
+  Add flexbox to the header and display items evenly
+  Center entire content using flex on main content/body
+  Add width to text box
+ 
+  /*
+
 * TODO B: Ensure that the page is responsive for tablet and mobile.
+
+	Add media queries for tablet and mobile screens
 */
+
+
 
 .header, .main {
 	padding-left: 16px;

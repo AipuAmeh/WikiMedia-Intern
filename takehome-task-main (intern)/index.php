@@ -1,20 +1,25 @@
 <?php
 
 // TODO A: Improve the readability of this file through refactoring and documentation.
-	// Added white space between Article Editor and the word count
+
+	// Added spacing and comments, grouped items together
 
 // TODO B: Review the HTML structure and make sure that it is valid and contains
 // required elements. Edit and re-organize the HTML as needed.
 
+	// I would remove the "echo"'s and have index display html elements regularly
+
 // TODO C: Review the index.php entrypoint for security and performance concerns
 // and provide fixes. Note any issues you don't have time to fix.
 
-	// I would add php to sanitize the action of post that is attached to the form element. That way, if an attacker tries to input special characters or another link in the text fields, it will not work. 
+	// I would add php to sanitize the action of post that is attached to the form element. That way, if an attacker tries to 
+	// input special characters or another link in the text fields, it will not work. 
 
 // TODO D: The list of available articles is hardcoded. Add code to get a
 // dynamically generated list.
 
-	// 
+	// I would map through the existing articles and echo out a list item that outputs the article title and has an href that
+	// directs to the content of that article
 
 
 
